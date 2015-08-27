@@ -1,10 +1,7 @@
-class Result
-  def response(name, emotion)
-    if emotion == "panic" 
-      return "Don't worry!"
-    else
-      return "Me too!"
-    end
-    end 
+class Review < ActiveRecord::Base 
+  
+  validates_presence_of :id, :name, :review, :business_name, :business_address
+  
 end
+
 
