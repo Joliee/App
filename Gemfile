@@ -11,3 +11,4 @@ gem 'shotgun'
 gem 'pry'
 gem 'sinatra'
 
+gem 'yelp', require: 'yelp'
