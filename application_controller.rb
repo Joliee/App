@@ -14,7 +14,9 @@ class MyApp < Sinatra::Base
   post '/' do
     @search = Search.new
     @list = @search.search("racist")
-    erb :sylvie
+    erb :business_list
+    
+  
   end
 
 

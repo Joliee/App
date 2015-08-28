@@ -17,6 +17,16 @@
    
  </head>
  <body>
-  
+   
+  <div id="results">
+    
+   <%= @list[0].name%>
+
+<% @list.each do |b| %>
+<%= b.name %>
+<br>
+<% end %>
+   </div>
+   
  </body>
 </html>
