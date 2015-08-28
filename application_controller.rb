@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-require './config/environment'
+#require './config/environment'
 require_relative 'models/model2.rb'
 
 class MyApp < Sinatra::Base
@@ -15,21 +15,13 @@ class MyApp < Sinatra::Base
      erb :search_keyword
    end
 
-  get '/resources' do
-    erb :resources
-  end
-
   post  '/respond' do
     puts params
     @search = Search.new
-    @list = @search.search(params[:mydropdown], params[:location])
+    @list = @search.search(params[:mydropdown])
 
     erb :respond
-
-
   end
 end
-
-
 
 
