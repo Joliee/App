@@ -144,6 +144,10 @@ pper {
     font-color: rgb(184,134,11);
   }
   
-  .results {
-    font-color: rgb(184,134,11);
+  #results {
+    color: rgb(218,165,32);
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    font-size: 18px;
   }
