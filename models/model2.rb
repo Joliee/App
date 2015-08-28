@@ -9,13 +9,12 @@ class Search
                             token_secret: "E0FbGHegVhpkdPYHyzq8CM2t6pc"
                           })
   end
-  def search(discrimination)
+  def search(discrimination, area)
 
   params = { term: discrimination
   }
 
-response = @client.search("New York", params)
+    response = @client.search(area, params)
     return response.businesses
 end
-
 end

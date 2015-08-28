@@ -15,13 +15,21 @@ class MyApp < Sinatra::Base
      erb :search_keyword
    end
 
+  get '/resources' do
+    erb :resources
+  end
+
   post  '/respond' do
     puts params
     @search = Search.new
-    @list = @search.search(params[:mydropdown])
+    @list = @search.search(params[:mydropdown], params[:location])
 
     erb :respond
+
+
   end
 end
+
+
 
 
