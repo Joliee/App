@@ -18,8 +18,8 @@ class MyApp < Sinatra::Base
   post  '/respond' do
     puts params
     @search = Search.new
-    @list = @search.search("racist")
-    
+    @list = @search.search(params[:mydropdown])
+
     erb :respond
   end
 end
