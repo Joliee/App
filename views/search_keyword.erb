@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <title>Search Keyword</title>
-   
+
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -12,13 +12,13 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
+
   <link rel = "stylesheet" type = "text/css"  href= "css/style.css">
-   
+
  </head>
 
 <body>
-<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<form name="myform" action="/respond" method="POST">
 <div align="center">
 <select name="mydropdown">
 <option value="Racial">Racial</option>
@@ -28,27 +28,26 @@
   <option value="Disability">Disability</option>
   <option value="Anti-Faith">Anti-Faith</option>
 </select>
-</div>
-</form>
-</body>
 
+<<<<<<< HEAD
 <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
 <div align="center">
 <br><br>
 <br><input type="submit" value="Send me your name!"><br>
 </div>
+=======
+  <br><input type="submit" value="Search"><br>
+  </div>
+>>>>>>> fcb7f2143edfb41ab3ffcad2fa4542667f5787a1
 </form>
-   
-  <div id="results">
-    
-   <%= @list[0].name%>
 
-<% @list.each do |b| %>
-<%= b.name %>
-<br>
-<% end %>
+
+  </body>
+
+  <div id="results">
+
    </div>
-   
-   
+
+
  </body>
 </html>
