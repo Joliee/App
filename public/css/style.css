@@ -1,20 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
-
 body{
-  
   background:rgb(117, 25, 25);
     
 }
 
 h1{
-  color:rgb(184,134,11);
+  color:rgb(218,165,32);
   position: relative;
   text-align:center;
   font-family: "Ubuntu", sans-serif;
   text-decoration: underline;
   font-size: 80px;
   z-index: 20;
+  margin-top: 0px;
+  
 }
 pper {
     padding-left: 0;
@@ -73,20 +73,22 @@ pper {
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+    text-indent: 40px;
+    line-height: 50px;
+  text-align: left;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: rgb(218,165,32);
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
+  
 }
 
 .sidebar-nav li a:active,
@@ -107,6 +109,7 @@ pper {
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+  width: 200px;
 }
 
 @media(min-width:768px) {
@@ -119,7 +122,7 @@ pper {
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 350px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -135,3 +138,8 @@ pper {
         position: relative;
         margin-right: 0;
     }
+  
+  #button {
+    font-size: 25px;
+    font-color: rgb(184,134,11);
+  }
