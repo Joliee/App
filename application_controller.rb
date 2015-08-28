@@ -12,14 +12,16 @@ class MyApp < Sinatra::Base
   end
 
   post '/' do
+     erb :search_keyword
+   end
+
+  post  '/respond' do
+    puts params
     @search = Search.new
     @list = @search.search("racist")
-    erb :search_keyword
     
-  
+    erb :respond
   end
-
-
-
 end
+
 
