@@ -2,7 +2,7 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Business List</title>
+  <title>Search Keyword</title>
    
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,7 +16,29 @@
   <link rel = "stylesheet" type = "text/css"  href= "css/style.css">
    
  </head>
- <body>
+
+<body>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="center">
+<select name="mydropdown">
+<option value="Racial">Racial</option>
+<option value="Gender-Based">Gender-Based</option>
+<option value="Sexual-Orientation">Anti-Queer</option>
+  <option value="Classist">Classist</option>
+  <option value="Disability">Disability</option>
+  <option value="Anti-Faith">Anti-Faith</option>
+</select>
+</div>
+</form>
+</body>
+
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+<div align="center">
+<br><br>
+<input type="text" size="25" value="Enter your name here!">
+<br><input type="submit" value="Send me your name!"><br>
+</div>
+</form>
    
   <div id="results">
     
@@ -27,6 +49,7 @@
 <br>
 <% end %>
    </div>
+   
    
  </body>
 </html>
